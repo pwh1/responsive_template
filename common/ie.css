@@ -1,0 +1,25 @@
+.container {
+	max-width: 1100px;
+}
+
+.back {
+	background: url(../img/iecircle.png) 0 0 no-repeat;
+}
+
+#top {
+	background: #fafafa;
+}
+
+* html h1 {
+	position: absolute;
+	top: 5px;
+	left: 0;
+}
+
+* html #t {
+	display:  none;
+}
+
+* html .back {
+	background: url(../img/iecircle.gif) 0 0 no-repeat;
+}
