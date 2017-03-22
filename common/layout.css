@@ -1,64 +1,55 @@
 body {
-  background: #fafafa; 
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: rgba(255,255,255, 1.0);
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	color: #222222;
+	color: rgba(1,1,1,0.95);
 	text-align: center;
 }
-
 /* ============ main divs ============ */
 
 #top {
-	background-color:rgba(255,255,255,0.95);
+	background-color: rgba(1,1,1,0.95);
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: 60px;
 	width: 100%;
-	border-bottom: 1px solid #888;
 	padding: 10px 0;
 	z-index: 999;
 }
-
 #t {
 	height: 0px;
 	overflow: hidden;
 }
-
 .container {
 	text-align: left;
 	margin: 0 auto;
 }
-
 #main {
 	padding-bottom: 50px;
 	max-width: 700px;
 	margin: 0 auto;
 }
-
 /* ============ text + img styles ============ */
 
 a {
-	color:  rgb(1, 1, 1);
+	color: rgba(1,163,232,1.00);
 	text-decoration: none;
 }
-
 a:hover {
 	text-decoration: underline;
 }
-
 .clear {
 	clear: both;
 }
-
 h1 {
 	margin: 0 0 0 10px;
 	font-size: 40px;
- 	line-height: 60px;
+	line-height: 60px;
+	font-weight: 700;
 }
-
 h2 {
 	text-align: center;
 	font-size: 40px;
@@ -66,11 +57,10 @@ h2 {
 	margin: 0 0 0 10px;
 	padding: 90px 0 0 0;
 	font-weight: 700;
- 	line-height: 1.2;
+	line-height: 1.2;
 	position: relative;
 	top: 27%;
 }
-
 h3 {
 	margin: 0 0 0 10px;
 	padding: 80px 0 0 0;
@@ -78,7 +68,6 @@ h3 {
 	font-weight: 700;
 	text-align: center;
 }
-
 h4 {
 	margin: 0 0 0 10px;
 	padding: 80px 0 0 0;
@@ -87,33 +76,27 @@ h4 {
 	text-align: center;
 	padding: 20px 0 10px 0;
 }
-
 p, li {
 	font-weight: 300;
- 	opacity: 1;    
- 	font-size: 16px;
-    line-height: 24px;
+	opacity: 1;
+	font-size: 16px;
+	line-height: 24px;
 	margin: 5px 0;
 }
-
 img {
 	border: 0;
 }
-
 #main a {
 	text-decoration: underline;
 }
-
 #main a:hover {
 	text-decoration: none;
 }
-
 /* ============ nav ============ */
 
 #mob {
 	display: none;
 }
-
 #top ul#layer-menu {
 	display: block;
 	float: right;
@@ -128,115 +111,83 @@ img {
 	line-height: 70px;
 	height: 70px;
 }
-
 #top ul li {
 	float: left;
 }
-
 #top ul li a {
 	display: block;
 	line-height: 70px;
 	padding-left: 30px;
 }
-
 h1 a {
 	text-decoration: none!important;
+	color: rgba(255,255,255,1.00);
 }
-
 #c {
-	color: #fafafa;
+	color: rgba(229,229,229,1.00);
 }
-
 .back {
-	background-color:rgba(122,122,122,0.95);
-	border-radius: 40px;
-	-moz-border-radius: 40px;
-	width: 57px;
-	height: 57px;
+	background: rgba(255,255,255,1.00);
+	color: rgba(1,1,1,0.95);
+	text-transform: uppercase;
+	font-weight: 700;
 	display: block;
-	text-align: center;
-	font-family: 'Roboto Slab','Rockwell', "Courier New", Courier, monospace;
-	font-size: 30px;
-	font-weight: bold;
-	position: absolute;
-	left: 50%;
-	margin: -30px 0 0 -28px;
-	color: #fff;
-	text-shadow: 0px 1px 0px rgb(101, 101, 101);
-	line-height: 57px;
-}
-
-.back {
+	width: 200px;
+	height: 50px;
+	line-height: 53px;
+	border: 3px solid rgba(1,1,1,0.95);
 	position: inherit;
-	margin: 0  auto;
+	margin: 30px auto;
 	text-align: center;
 	opacity: 0.85;
+	text-decoration: none!important;
 }
-
 .back:hover {
 	opacity: 1;
+	background: rgba(1,1,1,0.95);
+	color: rgba(255,255,255,1.00);
 }
-
-.back img {
-	margin-top: 4px;
-}
-
-
 
 /* ============ mobile ============ */
 
-@media  (max-width: 630px) {
-
-
+@media (max-width: 630px) {
 #top ul li a {
 	padding-left: 20px;
 }
-
 }
 
-
-@media  (max-width: 480px) {
-
+@media (max-width: 480px) {
 .no-mob {
 	display: none;
 }
-
 #mob {
 	display: block;
 	position: absolute;
 	top: 20px;
 	right: 10px;
-	opacity: 0.5;
+	opacity: 1;
 	z-index: 999;
 }
-
 #mob:hover, #mob:active, #mob.active {
-	opacity: 1;
+	opacity: 0.5;
 }
-
 h1 {
 	font-size: 32px;
 	height: 50px;
 	line-height: 50px;
 }
-
 #top {
 	height: 50px;
 }
-
 h2 {
 	font-size: 30px;
 }
-
-
 h3 {
 	font-size: 25px;
 }
-
 h4 {
 	font-size: 20px;
 }
-
 #top ul#layer-menu {
 	top: 72px;
 	width: 100%;
@@ -244,11 +195,9 @@ h4 {
 	margin: 0;
 	display: none;
 }
-
 #layer-menu.active {
 	display: block!important;
 }
-
 #top ul li {
 	float: none;
 	text-align: center;
@@ -259,7 +208,6 @@ h4 {
 	margin: 0;
 	border-bottom: 1px solid #eee;
 }
-
 #top ul li a {
 	display: block;
 	line-height: 40px;
@@ -267,10 +215,8 @@ h4 {
 	padding-left: 0;
 	font-size: 20px;
 }
-
 #top ul li a:hover {
 	background: #eee;
 	text-decoration: none;
 }
-
 }
